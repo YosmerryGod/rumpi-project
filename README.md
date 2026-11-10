@@ -123,6 +123,25 @@ Build a separate native messaging service for conversations between RUMPY users.
 
 WhatsApp Connector and RUMPY Native Messaging are separate channels with separate lifecycle and data ownership. WhatsApp should become an optional integration as the RUMPY network grows.
 
+
+## Development and device preview workflow
+
+The development environment will use the user's existing Ubuntu 24.04 VPS and GitHub repository.
+
+Planned workflow:
+1. Source code is maintained in GitHub.
+2. The VPS checks out the repository and runs the Expo development server.
+3. The developer opens the app on an Android device using Expo Go during the early UI development stage.
+4. Use a secure, reachable connection method for the device preview. Do not expose development services or debugging endpoints publicly without appropriate access controls.
+5. Use Expo Development Builds when native modules or custom native configuration are needed beyond Expo Go.
+6. Use EAS Build or an equivalent supported cloud build workflow for installable Android and iOS artifacts.
+
+Important constraints:
+- A development server running on a VPS must be reachable from the phone. Network routing, firewall rules, and any required tunnel must be configured deliberately.
+- Expo Go is for early development and preview, not the final production application.
+- iOS simulator builds require macOS; physical iOS testing and App Store distribution have Apple's own device/account requirements. Cloud builds can be used to create iOS binaries without owning a Mac.
+- Do not assume the VPS already has the required Node.js, package manager, Expo CLI, or firewall configuration. Inspect before installing or changing anything.
+
 ## Architecture principles
 
 - RUMPY owns its user identity, profiles, social graph, contact graph, content, and native messages.
