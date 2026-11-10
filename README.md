@@ -17,7 +17,7 @@ RUMPY is a social and communication platform designed to help people discover pu
 - Do not build the main RUMPY client as a website, Next.js web app, or PWA.
 - Backend services and APIs remain separate from the mobile application.
 - The mobile app communicates with RUMPY backend services for authentication, profiles, social content, native messaging, and connector management.
-- The initial target platforms are **Android and iOS**. Build toward a shared mobile codebase where practical. The mobile development framework is still undecided; do not assume one until the user confirms it.
+- The initial target platforms are **Android and iOS**. Build toward a shared mobile codebase where practical. The selected mobile development framework is **React Native**, with **TypeScript** as the preferred application language. Target Android and iOS from a shared codebase. Confirm the detailed toolchain (such as Expo or React Native Community CLI) before scaffolding the app.
 
 ## Product vision
 
