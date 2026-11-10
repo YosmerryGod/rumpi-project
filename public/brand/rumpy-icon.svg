@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">RUMPY app icon</title>
+  <desc id="desc">White minimal speech bubble with three red dots on a Merah Nusantara background.</desc>
+  <rect width="1024" height="1024" rx="224" fill="#D92738"/>
+  <path d="M270 330c0-88 72-160 160-160h300c88 0 160 72 160 160v270c0 88-72 160-160 160H480L318 872c-23 18-56 2-56-27V760c-0.5-1-1-2-1-3-0.7-3-1-6-1-9V330Z" fill="#FFFFFF"/>
+  <circle cx="420" cy="493" r="43" fill="#D92738"/>
+  <circle cx="575" cy="493" r="43" fill="#D92738"/>
+  <circle cx="730" cy="493" r="43" fill="#D92738"/>
+</svg>
