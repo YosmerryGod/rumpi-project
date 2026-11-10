@@ -8,6 +8,17 @@ RUMPY is a social and communication platform designed to help people discover pu
 
 > **Project status:** This README documents the current product direction and planned architecture. It is not a claim that these features have already been implemented.
 
+
+## Application platform
+
+**Product decision: RUMPY will be developed as a mobile application, not as a web app or PWA.**
+
+- The primary user-facing product is an installable mobile app.
+- Do not build the main RUMPY client as a website, Next.js web app, or PWA.
+- Backend services and APIs remain separate from the mobile application.
+- The mobile app communicates with RUMPY backend services for authentication, profiles, social content, native messaging, and connector management.
+- The choice of mobile development framework and the initial target platforms (Android, iOS, or both) are still undecided. Do not assume a framework until the user confirms it.
+
 ## Product vision
 
 RUMPY will initially use a WhatsApp connector to help acquire users and provide a familiar communication bridge. Over time, RUMPY will grow its own native user network and messaging infrastructure. The long-term goal is for RUMPY to work independently of WhatsApp.
